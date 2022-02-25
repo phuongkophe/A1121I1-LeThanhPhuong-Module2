@@ -1,10 +1,10 @@
-package ss2_java_loop.exercise;
+package ss2_java_loop;
 
-public class FirstPrimeNumber {
+public class Test {
     public static void main(String[] args) {
         int count = 2, n = 3;
         System.out.print("2  3");
-        while (count < 20) {
+        while (count < 10) {
             n++;
             boolean checkSNT = true;
             for (int i = 2; i < n; i++) {
