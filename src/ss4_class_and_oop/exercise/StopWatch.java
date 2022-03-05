@@ -1,4 +1,4 @@
-package ss3_array_and_method.exercise;
+package ss4_class_and_oop.exercise;
 
 public class StopWatch {
     private long startTime;
