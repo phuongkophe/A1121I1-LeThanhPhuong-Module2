@@ -52,6 +52,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void edit() {
         System.out.println("Enter employee Id");
+        List<Employee> employee = new ArrayList<>();
+        int id = scanner.nextInt();
+
         
     }
 
