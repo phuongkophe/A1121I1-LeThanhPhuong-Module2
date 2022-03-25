@@ -1,6 +1,7 @@
-package controllers;
+package FuramaResort.src.controllers;
 
-import services.impl.EmployeeServiceImpl;
+import FuramaResort.src.services.EmployeeService;
+import FuramaResort.src.services.impl.EmployeeServiceImpl;
 
 import java.util.Scanner;
 
@@ -48,7 +49,7 @@ public class FuramaController {
     }
 
     public static void displayEmployeeMenu() {
-        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
+        EmployeeService employeeService = new EmployeeServiceImpl();
         while (check) {
             System.out.println("1. Display list employees");
             System.out.println("2. Add new employee");

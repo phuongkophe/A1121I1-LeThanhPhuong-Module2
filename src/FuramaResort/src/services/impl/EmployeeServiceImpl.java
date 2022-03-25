@@ -1,7 +1,7 @@
-package services.impl;
+package FuramaResort.src.services.impl;
 
-import models.Employee;
-import services.EmployeeService;
+import FuramaResort.src.models.Employee;
+import FuramaResort.src.services.EmployeeService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private static List<Employee> employeeList = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
-    @Override
+//    @Override
     public void display() {
         for (Employee employee: employeeList){
             System.out.println(employee.toString());
@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     }
 
-    @Override
+//    @Override
     public void addNew() {
         System.out.println("Enter employee ID: ");
         int id = Integer.parseInt(scanner.nextLine());
@@ -49,13 +49,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     }
 
-    @Override
+//    @Override
     public void edit() {
         System.out.println("Enter employee Id");
-        List<Employee> employee = new ArrayList<>();
-        int id = scanner.nextInt();
 
-        
     }
 
     @Override

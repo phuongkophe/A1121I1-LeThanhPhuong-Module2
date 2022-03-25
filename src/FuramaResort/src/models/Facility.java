@@ -1,4 +1,4 @@
-package models;
+package FuramaResort.src.models;
 
 public abstract class Facility {
     private String serviceName;

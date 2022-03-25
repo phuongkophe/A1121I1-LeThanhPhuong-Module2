@@ -1,4 +1,4 @@
-package models;
+package FuramaResort.src.models;
 
 public class Contract {
     private String contractId;

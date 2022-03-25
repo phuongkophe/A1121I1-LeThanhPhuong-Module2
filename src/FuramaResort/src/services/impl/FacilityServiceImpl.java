@@ -1,6 +1,6 @@
-package services.impl;
+package FuramaResort.src.services.impl;
 
-import services.FacilityService;
+import FuramaResort.src.services.FacilityService;
 
 public class FacilityServiceImpl implements FacilityService {
     @Override

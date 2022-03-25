@@ -1,9 +1,9 @@
-package ss11_stack_queue.practice.linked_list_in_java.util;
+package ss11_stack_queue.practice.linked_list;
 
 import java.util.EmptyStackException;
 import java.util.LinkedList;
 
-public class MyGenericStack {
+public class MyGenericStack<T> {
     private LinkedList<T> stack;
 
     public MyGenericStack() {

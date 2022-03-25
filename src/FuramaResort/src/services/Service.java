@@ -1,4 +1,4 @@
-package services;
+package FuramaResort.src.services;
 
 public interface Service {
     public void display();

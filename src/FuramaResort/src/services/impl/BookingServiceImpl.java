@@ -1,6 +1,6 @@
-package services.impl;
+package FuramaResort.src.services.impl;
 
-import services.BookingService;
+import FuramaResort.src.services.BookingService;
 
 public class BookingServiceImpl implements BookingService {
     @Override

@@ -1,4 +1,4 @@
-package models;
+package FuramaResort.src.models;
 
 import java.util.Date;
 

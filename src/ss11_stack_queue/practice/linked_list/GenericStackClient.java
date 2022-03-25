@@ -1,4 +1,4 @@
-package ss11_stack_queue.practice.linked_list_in_java.util;
+package ss11_stack_queue.practice.linked_list;
 
 public class GenericStackClient {
     private static void stackOfIStrings() {

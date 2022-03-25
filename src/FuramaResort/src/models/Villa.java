@@ -1,4 +1,4 @@
-package models;
+package FuramaResort.src.models;
 
 public class Villa extends Facility {
     private String villaStandard;

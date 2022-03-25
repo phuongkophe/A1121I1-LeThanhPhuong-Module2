@@ -1,4 +1,4 @@
-package models;
+package FuramaResort.src.models;
 
 public class Customer extends Person{
     private String customerType;
