@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class Booking {
     private String bookingId;
-    private Date startDay;
-    private Date endDate;
+    private String startDay;
+    private String endDate;
     private Customer customer;
     private Facility facility;
 
     public Booking() {
     }
 
-    public Booking(String bookingId, Date startDay, Date endDate, Customer customer, Facility facility) {
+    public Booking(String bookingId, String startDay, String endDate, Customer customer, Facility facility) {
         this.bookingId = bookingId;
         this.startDay = startDay;
         this.endDate = endDate;
@@ -28,19 +28,19 @@ public class Booking {
         this.bookingId = bookingId;
     }
 
-    public Date getStartDay() {
+    public String getStartDay() {
         return startDay;
     }
 
-    public void setStartDay(Date startDay) {
+    public void setStartDay(String startDay) {
         this.startDay = startDay;
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 

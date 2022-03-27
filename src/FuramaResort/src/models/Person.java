@@ -1,36 +1,36 @@
 package FuramaResort.src.models;
 
 public abstract class Person {
-    private int id;
+    private String id;
     private String name;
     private String address;
-    private int age;
-    private String sex;
+    private String birthday;
+    private String gender;
     private String email;
-    private String idCard;
+    private int idCard;
     private int phoneNumber;
 
     public Person() {
     }
 
-    public Person(int id, String name, String address, int age, String sex, String email, String idCard, int phoneNumber) {
+    public Person(String id, String name, String address, String birthday, String gender, String email, int idCard, int phoneNumber) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.age = age;
-        this.sex = sex;
+        this.birthday = birthday;
+        this.gender = gender;
         this.email = email;
         this.idCard = idCard;
         this.phoneNumber = phoneNumber;
     }
 
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getEmail() {
@@ -41,19 +41,19 @@ public abstract class Person {
         this.email = email;
     }
 
-    public String getIdCard() {
+    public int getIdCard() {
         return idCard;
     }
 
-    public void setIdCard(String idCard) {
+    public void setIdCard(int idCard) {
         this.idCard = idCard;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -73,12 +73,12 @@ public abstract class Person {
         this.address = address;
     }
 
-    public int getAge() {
-        return age;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public int getPhoneNumber() {
@@ -95,8 +95,8 @@ public abstract class Person {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", age=" + age +
-                ", sex='" + sex + '\'' +
+                ", age=" + birthday +
+                ", sex='" + gender + '\'' +
                 ", email='" + email + '\'' +
                 ", idCard='" + idCard + '\'' +
                 ", phoneNumber=" + phoneNumber +

@@ -1,6 +1,8 @@
 package FuramaResort.src.controllers;
 
+import FuramaResort.src.services.CustomerService;
 import FuramaResort.src.services.EmployeeService;
+import FuramaResort.src.services.impl.CustomerServiceImpl;
 import FuramaResort.src.services.impl.EmployeeServiceImpl;
 
 import java.util.Scanner;
@@ -65,11 +67,20 @@ public class FuramaController {
                     employeeService.addNew();
                     break;
                 }
+                case 3: {
+                    employeeService.edit();
+                    break;
+                }
+                case 4: {
+                    displayMainMenu();
+                    break;
+                }
             }
         }
     }
 
     public static void displayCustomerMenu() {
+        CustomerService customerService = new CustomerServiceImpl();
         while (check) {
             System.out.println("1. Display list customers");
             System.out.println("2. Add new customers");
@@ -78,7 +89,20 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1: {
-
+                    customerService.display();
+                    break;
+                }
+                case 2: {
+                    customerService.addNew();
+                    break;
+                }
+                case 3: {
+                    customerService.edit(););
+                    break;
+                }
+                case 4: {
+                    displayMainMenu();
+                    break;
                 }
             }
         }

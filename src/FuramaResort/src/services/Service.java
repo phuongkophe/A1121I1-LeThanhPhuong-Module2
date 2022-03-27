@@ -6,6 +6,4 @@ public interface Service {
     public void addNew();
 
     public void edit();
-
-    public void delete();
 }

@@ -14,8 +14,8 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public Employee(int id, String name, String address, int age, String sex, String email, String idCard, int phoneNumber, String employeeLevel, String position, int salary) {
-        super(id, name, address, age, sex, email, idCard, phoneNumber);
+    public Employee(String id, String name, String birthday, String age, String gender, String email, int idCard, int phoneNumber, String employeeLevel, String position, int salary) {
+        super(id, name, birthday, age, gender, email, idCard, phoneNumber);
         this.employeeLevel = employeeLevel;
         this.position = position;
         this.salary = salary;
@@ -51,6 +51,6 @@ public class Employee extends Person {
                 "employeeLevel='" + employeeLevel + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +
-                '}' +super.toString();
+                '}' + super.toString();
     }
 }
